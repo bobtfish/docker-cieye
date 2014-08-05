@@ -5,5 +5,14 @@ if [ ! -d "/ci-eye" ];then
     exit 1
 fi
 
-exec /usr/bin/java -jar /usr/share/ci-eye-0.4.0.jar 47819
+if [ ! -f "/ci-eye/views.txt" ];then
+    cp -r /example-config/* /ci-eye/
+fi
+
+if [ ! -d "/ci-eye/logs" ];then
+    mkdir /ci-eye/logs
+fi
+chown nobody:nobody /ci-eye/logs
+
+exec setuidgid nobody /usr/bin/java -jar /usr/share/ci-eye-0.4.0.jar 47819
 
