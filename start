@@ -6,6 +6,9 @@ if [ ! -d "/ci-eye" ];then
 fi
 
 if [ ! -f "/ci-eye/views.txt" ];then
+    echo "Cannot find /ci-eye/views.txt"
+    echo "Going to copy example config into /ci-eye/ in 10 seconds, then start. Ctrl-C to abort"
+    sleep 10
     cp -r /example-config/* /ci-eye/
 fi
 
