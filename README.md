@@ -7,5 +7,13 @@ For example:
     docker run -d -v /usr/local/share/ci-eye:/ci-eye bobtfish/ci-eye
 
 If this is your first run (i.e. /ci-eye/views.txt cannot be found), then
-an example configuration will be dumped back to the volume.
+after 10 seconds (and with a warning on the console), an example
+configuration will be dumped back to the volume.
+
+You can use this config to start to customise your setup.
+
+License
+-------
+
+The code in this repository is copyright 2014 Tomas Doran, and licensed under the terms of the apache 2 license.
 
