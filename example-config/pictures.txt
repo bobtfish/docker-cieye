@@ -1,0 +1,18 @@
+[vlad.png]
+Vlad the Impaler
+vlad
+vimpaler
+dracula
+
+[stupid.png]
+stupid
+
+[gravatar:john.doe@domain.com]
+john
+
+
+[doh.png]
+-doh-
+
+[all-green.gif]
+-all-green-
